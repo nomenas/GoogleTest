@@ -1,8 +1,22 @@
-#include "../src/cut.h"
-
 #include <gtest/gtest.h>
 #include <iostream>
 
+class CUT
+{
+public:
+    void setValue(int value)
+    {
+        m_value = value;
+    }
+
+    int value() const
+    {
+        return m_value;
+    }
+
+private:
+    int m_value;
+};
 
 struct Fixture : public testing::Test
 {

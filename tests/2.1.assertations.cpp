@@ -66,7 +66,6 @@ TEST(AssertationTests, ExplicitSuccessAndFailure)
 
 TEST(AssertationTests, PredicateAssertion)
 {
-
     EXPECT_PRED2([](auto, auto)->bool{return true;}, 1., 2.);
     EXPECT_PRED_FORMAT2(::testing::FloatLE, 0.1, 0.2);
     EXPECT_PRED_FORMAT2(::testing::DoubleLE, 0.1, 0.2);
